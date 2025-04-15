@@ -1,4 +1,3 @@
-
 * {
     font-family: 'inter', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -722,55 +721,285 @@
 
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-    .logo-text {
-        font-size: 80px;
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
     }
 
-    .logo-text sup {
-        font-size: 30px;
+    .valorant-text h2,
+    .your-maps_left h2 {
+        width: 100%;
+        font-size: 60px;
     }
 
-    .subtitle {
-        font-size: 16px;
+    .valorant-text p,
+    .your-maps_left p {
+        width: 100%;
+    }
+
+    .your_agets-content-right > p {
+        width: 100%;
+    }
+
+    .news-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-menu ul {
+        display: none;
+    }
+
+    .hero-logo {
+        width: 300px;
+    }
+
+    .news-wrapper {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .news-card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .valorant-content,
+    .your_agets-content,
+    .your-maps_content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .valorant-text,
+    .valorant-video,
+    .your_agets-content-left,
+    .your_agets-content-right,
+    .your-maps_left,
+    .your-maps_right {
+        max-width: 100%;
+    }
+
+    .valorant-text h2,
+    .your-maps_left h2,
+    .your_agets-content-right h2 {
+        font-size: 50px;
+        margin: 0 auto 16px;
+    }
+
+    .season h2 {
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .your_agets-content-left img,
+    .your-maps_right img {
+        width: 100%;
+        height: auto;
     }
 }
 
 @media (max-width: 768px) {
     .navbar {
+        padding: 15px 0;
         flex-wrap: wrap;
-        gap: 16px;
-        justify-content: center;
-    }
-
-    .nav-menu ul {
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .nav-right_content {
-        margin: 0 auto;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .nav-right_content a {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
     }
 
     .hero {
-        margin-top: 120px;
-        /* Mobil ekranlarda navbar balandligi o'zgarishi mumkin */
+        margin-top: 80px;
+        height: auto;
+        min-height: 100vh;
     }
 
-    .logo-text {
-        font-size: 60px;
+    .hero-logo {
+        width: 250px;
     }
 
-    .logo-text sup {
-        font-size: 20px;
+    .subtitle {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .cta-button,
+    .watch-button,
+    .learn-button,
+    .agents-button,
+    .maps-button {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    .latest-news-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-links a {
+        padding: 5px 10px;
+    }
+
+    .hero-video,
+    .hero-video2 {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .nav-logo img {
+        width: 80px;
+    }
+    .hero-video{
+        top: -28px;
+    }
+    .nav-menu li div img {
+        width: 40px;
+    }
+
+    .search-box,
+    .global-box {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero-logo {
+        width: 200px;
     }
 
     .subtitle {
         font-size: 14px;
     }
 
-    .cta-button {
-        padding: 10px 40px;
+    .valorant-text h2,
+    .your-maps_left h2,
+    .your_agets-content-right h2 {
+        font-size: 40px;
+    }
+
+    .valorant-text h3,
+    .your-maps_left h4,
+    .your_agets-content-right h4 {
+        font-size: 16px;
+    }
+
+    .valorant-text p,
+    .your-maps_left p,
+    .your_agets-content-right > p {
+        font-size: 16px;
+    }
+
+    .season h2 {
+        font-size: 40px;
+    }
+
+    .season p {
+        font-size: 16px;
+    }
+
+    .footer-top p {
+        font-size: 14px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .esrb-rating {
+        width: 200px;
+        height: 100px;
+    }
+
+    .esrb-rating img {
+        height: 80px;
+    }
+
+    .esrb-rating p {
+        font-size: 11px;
+    }
+
+    .news-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-right_content a {
+        width: 80px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .hero-logo {
+        width: 180px;
+    }
+.hero-video{
+    top: -28px;
+}
+    .cta-button,
+    .watch-button,
+    .learn-button,
+    .agents-button,
+    .maps-button {
+        padding: 12px 15px;
+        font-size: 12px;
+    }
+
+    .valorant-text h2,
+    .your-maps_left h2,
+    .your_agets-content-right h2 {
+        font-size: 32px;
+    }
+
+    .season h2 {
+        font-size: 32px;
+    }
+
+    .news-card {
+        margin-bottom: 15px;
+    }
+
+    .category {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .desc {
         font-size: 14px;
     }
 }
